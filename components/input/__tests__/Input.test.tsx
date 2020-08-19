@@ -1,12 +1,13 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 import React from 'react'
 import { render, fireEvent } from '@testing-library/react'
-import Input from '../input'
+import Input from '../Input.component'
 
 const MOCK = {
   type: 'text',
   name: 'Testing',
   placeholder: 'Input',
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => {},
+  onChange: (_event: React.ChangeEvent<HTMLInputElement>) => {},
   value: '',
 }
 

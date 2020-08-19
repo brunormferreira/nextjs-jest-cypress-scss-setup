@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, FC } from 'react'
 import Head from 'next/head'
-import Input from '../components/input/input'
+import Input from '../components/input/Input.component'
 
-export default function Home() {
+const Home: FC = () => {
   const [text, setText] = useState<string>('')
 
   return (
@@ -61,3 +61,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home

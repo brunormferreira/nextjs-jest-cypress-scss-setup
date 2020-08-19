@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 
-import styles from './styles/Input.module.scss'
+import styles from './Input.module.scss'
 
 type Props = {
   type: string
