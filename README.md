@@ -6,7 +6,7 @@ First, install dependencies and after run the development server:
 npm i
 npm run dev
 # or
-yarn i
+yarn
 yarn dev
 ```
 
