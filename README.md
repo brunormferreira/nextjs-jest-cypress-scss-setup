@@ -1,10 +1,12 @@
 ## Getting Started
 
-First, run the development server:
+First, install dependencies and after run the development server:
 
 ```bash
+npm i
 npm run dev
 # or
+yarn i
 yarn dev
 ```
 
@@ -16,6 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### Packages
 
+- TypeScript
 - Jest
 - Testing Library
 - SCSS/Sass modules
