@@ -13,4 +13,5 @@ module.exports = {
   moduleNameMapper: {
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
   },
+  testMatch: ['<rootDir>/components/**/__tests__/**'],
 }
