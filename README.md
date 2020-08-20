@@ -2,11 +2,15 @@
 
 <div align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png" width="160">
-  <img src="https://download.logo.wine/logo/TypeScript/TypeScript-Logo.wine.png" width="150">
+  <img src="https://download.logo.wine/logo/TypeScript/TypeScript-Logo.wine.png" width="160">
 </div>
 <div align="center">
-  <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/jest-512.png" width="80">
-  <img src="https://codingfactory.mk/wp-content/uploads/2018/10/black-7fd39aa3.png" width="100" >
+  <div>
+    <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/jest-512.png" width="80">
+    <img src="https://codingfactory.mk/wp-content/uploads/2018/10/black-7fd39aa3.png" width="100" >
+  </div>
+  <br />
+  <img src="https://miro.medium.com/max/806/1*NvPgYjeU1dR4cDlYOBsszA.png" width="160">
 </div>
 
 # Core Idea
