@@ -9,7 +9,7 @@
     "format": "prettier --write **/*.{js,ts,tsx}",
     "lint": "eslint . --ext ts --ext tsx --ext js",
     "test": "jest",
-    "test:watch": "jest --watch",
+    "test:watch": "jest --watchAll --verbose",
     "test:coverage": "jest --coverage",
     "cy:open": "cypress open",
     "cy:run": "cypress run"
