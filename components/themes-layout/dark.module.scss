@@ -1,0 +1,17 @@
+.theme {
+  --colors-green: #32ff54;
+  --colors-purple: #be00ff;
+
+  --accents-1: #111111;
+  --accents-2: #333333;
+  --accents-3: #444444;
+  --accents-4: #666666;
+  --accents-5: #888888;
+
+  --bg-color: #000;
+  --border-color: var(--colors-green);
+  --link-color: var(--colors-green);
+
+  --poll-bar-color: var(--colors-green);
+  --inline-code-color: var(--colors-purple);
+}
