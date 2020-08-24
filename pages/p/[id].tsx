@@ -11,7 +11,12 @@ const Post: NextPage<Props> = ({ show }: Props) => (
   <Layout>
     <h1>{show.name}</h1>
     <p>{show.summary.replace(/<[/]?p>/g, '')}</p>
-    <img src={show.image.medium} />
+    <img
+      src={
+        show.image?.medium ??
+        'https://img.icons8.com/plasticine/2x/no-image.png'
+      }
+    />
   </Layout>
 )
 
