@@ -1,18 +1,26 @@
 import { FC } from 'react'
 import Link from 'next/link'
 
-const linkStyle = {
-  marginRight: 15,
-}
+import cn from '../../utils/mergeClassNames'
+
+import { useTheme } from '../../context/theme'
+
+import styles from './Header.module.scss'
 
 const Header: FC = () => {
+  const [theme] = useTheme()
+
   return (
     <div>
       <Link href="/">
-        <a style={linkStyle}>Home</a>
+        <a className={cn([styles.linkStyle, theme && styles['dark-anchor']])}>
+          Home
+        </a>
       </Link>
       <Link href="/about">
-        <a style={linkStyle}>About</a>
+        <a className={cn([styles.linkStyle, theme && styles['dark-anchor']])}>
+          About
+        </a>
       </Link>
     </div>
   )
