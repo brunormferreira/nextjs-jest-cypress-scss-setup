@@ -1,9 +1,14 @@
-import { FC, useState } from 'react'
+import { FC } from 'react'
 import Head from 'next/head'
+
 import Header from '../header/Header.component'
 
 import lightTheme from '../themes-layout/light.module.scss'
 import darkTheme from '../themes-layout/dark.module.scss'
+
+import cn from '../../utils/mergeClassNames'
+
+import { useTheme } from '../../context/theme'
 
 import styles from './Layout.module.scss'
 
@@ -12,17 +17,14 @@ type Props = {
 }
 
 const Layout: FC<Props> = ({ children }: Props) => {
-  const [darkMode, setDarkMode] = useState(false)
-  const isDark = !!darkMode
-
-  const cn = (arr: string[]) => arr.filter(Boolean).join(' ')
+  const [theme, setTheme] = useTheme()
 
   return (
     <div
       className={cn([
         styles.background,
-        isDark && styles['dark-bg'],
-        isDark ? darkTheme.theme : lightTheme.theme,
+        theme && styles['dark-bg'],
+        theme ? darkTheme.theme : lightTheme.theme,
       ])}
     >
       <Head>
@@ -32,9 +34,9 @@ const Layout: FC<Props> = ({ children }: Props) => {
       <Header />
       <div>{children}</div>
       <button
-        className={cn([styles.button, isDark && styles['dark-button']])}
+        className={cn([styles.button, theme && styles['dark-button']])}
         type="button"
-        onClick={() => setDarkMode(!darkMode)}
+        onClick={() => setTheme(!theme)}
       >
         Switch theme
       </button>
