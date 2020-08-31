@@ -1,0 +1,18 @@
+.linkStyle {
+  margin-right: 15px;
+  color: black;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--link-color);
+  }
+}
+
+.dark-anchor {
+  color: #fff;
+
+  &:hover {
+    text-decoration-color: var(--link-color);
+  }
+}
